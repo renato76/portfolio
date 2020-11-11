@@ -1,10 +1,14 @@
+html {
+  scroll-behavior: smooth;
+  background-color: #333;
+}
 
 body {
   line-height: 1.7;
   font-size: 1em;
 }
 
-/* Add a black background color to the top navigation */
+
 .topnav {
   position: relative;
   top: -20px;
@@ -13,14 +17,12 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
-  padding-right: 10em;
+  padding-right: 5em;
   padding-top: 20px;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   margin-right: 2.5em;
-  float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -31,19 +33,13 @@ body {
   letter-spacing: 0.08em;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
-  /* background-color: #ddd; */
   color: #00afa6;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  color: #00afa6;
+  transition: 500ms;
 }
 
 .hero {
-  background-color: #333;
+  background-color: #333333;
   background-image: url('');
   color: rgb(255, 255, 255);
   height: 100vh;
@@ -54,6 +50,7 @@ body {
 }
 
 .hero-main {
+  display: flex;
   padding: 0 100px;
   margin: 0 100px;
   height: 80vh;
@@ -72,6 +69,12 @@ body {
 .title h1 {
   font-family: 'Nunito', sans-serif;
   color: white;
+}
+
+#profile {
+  padding-top: 5em;
+  padding-left: 5em;
+  width: 35vw;
 }
 
 .about-main {
@@ -103,16 +106,16 @@ body {
   background-color: #e6e6e6;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 40em;
+  height: 50em;
   width: 100vw;
 }
+
 .skills {
   background-color: #e6e6e6;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0 20em;
+  padding: 0 28%;
   
 }
 
@@ -121,6 +124,7 @@ body {
   padding-bottom: 1.5em;
   padding-top: 1.7em;
   color: #2b2b2b;
+  padding-left: 44%;
 }
 
 .skills p {
@@ -137,7 +141,7 @@ body {
   
 }
 .logos {
-  padding: 10px 10px;
+  padding: 20px 22px;
 }
 
 .logos p {
@@ -162,30 +166,26 @@ body {
   flex-direction: column;
   align-items: center;
   font-weight: bold;
-  /* border-top: 10px solid #292929; */
 }
 
 .projects-rows-dark {
-  /* border: 1px dashed red; */
   padding-top: 4em;
   background-color: #222222;
-  height: 46em;
+  height: 44em;
   padding-bottom: 8em;
   width: 100vw;
 }
 
 .projects-rows-light {
   padding-top: 4em;
-  /* background-color: #272727; */
   background-color: #00afa6;
-  height: 42em;
+  height: 44em;
   padding-bottom: 8em;
   width: 100vw;
 }
 
 
 .projects-title {
-  /* margin-bottom: 4em; */
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
 }
@@ -227,9 +227,7 @@ body {
 }
 
 .project-links {
-  /* border: 1px dashed red; */
   display: flex;
-  /* justify-content: center; */
   margin-top: 1em;
 }
 
@@ -238,14 +236,59 @@ body {
 }
 
 
-.contact {
+.contacts-container {
   height: 20em;
   width: 100vw;
-  background-color: rgb(233, 233, 233);
-  padding-left: 5em;
+  background-color: #333333;
   margin-top: -23px;
+  display: block;
 }
 
-.contact h1 {
+.contact-heading h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
   padding-top: 1em;
+  padding-bottom: 0.6em;
+  color: white;
+  padding-left: 43%;
 }
+
+.icons-text {
+  display: flex;
+  padding-left: 44%;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+}
+i.far.fa-envelope,
+i.fab.fa-linkedin,
+i.fab.fa-github {
+  padding: 7px 4px;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.contact-text a {
+  color: white;
+  font-weight: bold;
+}
+
+.contact-text {
+  padding: 4px;
+}
+
+i.fas.fa-angle-double-up {
+  font-size: 40px;
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  padding-right: 7%;
+}
+i.fas.fa-angle-double-up:hover {
+  color: #00afa6;
+  transition: 500ms;
+}
+  
