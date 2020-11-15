@@ -21,7 +21,26 @@
 </head>
 <body>
   <div id="root">
-    <section id="top" class="hero">
+    <section id=top class="hero">
+      <div class="hero-container">
+        <div class="hero-child">
+          <h1>Renato Mignogna</h1>
+          <h2>Software Engineer, London</h2>
+        </div>
+      </div>
+    </section>
+    <div class="profile">
+      <img id="profile" src="styles/circle-cropped.png"/>
+    </div>
+    <nav>
+      <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <!-- <section id="top" class="hero">
       <nav>
         <div class="navbar">
           <a href="#about">About</a>
@@ -41,18 +60,17 @@
           </div>
         </div>  
       </div>   
-    </section> 
+    </section>  -->
     <section id="about" class="about">
       <div class="about-main">
         <div class="about-statement">
           <div class="about-heading">
-            <!-- <i class="fas fa-code fa-2x" style="color:#00afa6"></i> -->
             <h1>About</h1>
           </div>
-          <div class="abaout-text">
+          <div class="about-text">
             <p>Hi, I'm Renato and I am a Full-Stack Software Engineer.</p>
 
-            <p>My journey into web development began when I attended a WordPress course after which I created my first HTML / CSS website for my own business. It sparked my curiosity in software engineering after increasing the business with its success.
+            <p>My journey into web development began when I attended a WordPress course after which I created my first HTML / CSS website for my own business. It sparked my curiosity in software engineering after increasing the business with its success.</p>
 
             <p>Since then, I have always invested time learning more about coding by taking online courses, and creating WordPress websites, in particular for people in my community.</p> 
               
@@ -61,8 +79,6 @@
             <p>This year, I decided to accelerate my knowledge by completing a full-time Software Engineering Immersive course with General Assembly, where I gained experience in building full-stack applications using modern languages and frameworks.</p>
               
             <p>I am now looking to join a collaborative team where I can bring a good mix of programming skills and creativity, whilst continuing to feed my curiosity with more learning.</p>
-              
-              </p>
           </div>
         </div>
       </div>
@@ -170,7 +186,7 @@
       </div>
       <div class="projects-rows-dark">            
         <div class="project-name">
-          <h3>TMDB Movies Database</h3>
+          <h3>TMDB Movies API</h3>
         </div> 
         <div class="dark-project-row">
           <div class="dark-projects-images">
@@ -197,9 +213,14 @@
       </div>     
       <div class="projects-rows-light">            
         <div class="project-name">
-          <h3>PopQuest - Group Project</h3>
+          <h3>PopQuest API</h3>
         </div> 
         <div class="light-project-row">
+          <div class="light-projects-images">
+            <a href="https://popquest-game.herokuapp.com/" target="_blank">
+              <img src="./styles/projects/popquest-homepage.png" alt="" class="projects-image"/>
+            </a>
+          </div>
           <div class="projects-description">
             <p>The popQuest app allows users to create and complete fun 'quests' within the city of their choosing. Each quest consists of a series of stops where the user must solve a clue in order to reveal the next stop. 
               In some cases, the user device's coordinates will 'solve' the clue based on its proximity to a given location. Quests can be timed for those seeking a challenge, or simply a 'guided tour'-like trip.
@@ -216,11 +237,6 @@
                 </a>
               </div>
             </div>     
-          </div>
-          <div class="light-projects-image">
-            <a href="https://popquest-game.herokuapp.com/" target="_blank">
-              <img src="./styles/projects/popquest-homepage.png" alt="" class="projects-image"/>
-            </a>
           </div>
         </div>
       </div>  
@@ -244,7 +260,7 @@
               </a>
               <div class="app-link">
                 <a href="https://formula1-api.herokuapp.com/" target="_blank">
-                  <img src="./styles/logos/link-icon.png" width="50">
+                  <img class="link" src="./styles/logos/link-icon.png" width="50">
                 </a>
               </div>
             </div>     
@@ -256,6 +272,11 @@
           <h3>Connect 4 - JS Game</h3>
         </div> 
         <div class="light-project-row">
+          <div class="light-projects-images">
+            <a href="https://renato76.github.io/sei-project-1/" target="_blank">
+              <img src="./styles/projects/connect4.png" alt="" class="projects-image"/>
+            </a>
+            </div>
           <div class="projects-description">
             <p>Based on the classic board game where players need to form 4 in a row. This was my first project from General Assembly's Web Development Immersive Course. It was an individual project built in a week, and was both the first proper game I had built, and my first real-world type practice with JavaScript.</p>
             <div class="project-links">
@@ -270,11 +291,6 @@
                 </a>
               </div>
             </div>     
-          </div>
-          <div class="light-projects-image">
-          <a href="https://renato76.github.io/sei-project-1/" target="_blank">
-            <img src="./styles/projects/connect4.png" alt="" class="projects-image"/>
-          </a>
           </div>
         </div>
       </div>                 
