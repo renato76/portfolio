@@ -8,16 +8,10 @@ body {
   line-height: 1.7;
   font-size: 1em;
   margin: 0;
-  /* box-sizing: border-box; */
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* .navbar {
-  background-color: #333;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-} */
 .navbar {
   position: absolute;
   display: flex;
@@ -44,31 +38,35 @@ body {
 }
 
 .hero {
-  border-bottom: 20px solid #00afa6;
+  border-bottom: 18px solid #00afa6;
+  box-sizing: border-box;
 }
 
-.hero-child {
+.hero-container {
   background-image: linear-gradient(to bottom, #1f1f22e8, #28282ce5), url("london.jpg");
   background-size: cover;
   position: relative;
   height: 98vh;
 }
-.hero-child h1 {
+
+.hero-headings h1 {
   position: absolute;
   top: 40%;
   left: 20%;
   color: #ffffff;
   background-color: #141414;
+  border-radius: 7px;
   font-family: 'Nunito', sans-serif;
   opacity: 0.6;
   padding: 5px 10px;
 }
-.hero-child h2 {
+.hero-headings h2 {
   position: absolute;
   top: 50%;
   left: 20%;
   color: #ffffff;
   background-color: #141414;
+  border-radius: 7px;
   font-family: 'Nunito', sans-serif;
   opacity: 0.6;
   padding: 5px 10px;
@@ -82,48 +80,9 @@ body {
 
 #profile {
   width: 400px;
+
 }
 
-
-/* .hero {
-  background-color: #333333;
-  color: rgb(255, 255, 255);
-  height: 100vh;
-  border-bottom: 20px solid #00afa6;
-} */
-
-/* .hero-main {
-  display: flex;
-  justify-content: center;
-  font-family: 'Spartan', sans-serif;
-  margin-top: 150px;
-} */
-
-/* .title {
-
-} */
-
-/* .title h2 {
-  color: #00afa6;
-  font-size: 1.6em;
-  font-family: 'Nunito', sans-serif;
-  --animate-duration: 2200ms;
-  --animate-delay: 0.9s;
-}
-.title h1 {
-  font-family: 'Nunito', sans-serif;
-  color: white;
-  --animate-duration: 1800ms;
-  --animate-delay: 0.9s;
-} */
-
-/* #profile {
-  width: 70%;
-  
-}
-.profile {
-  width: 30em;
-} */
 .about-main {
   display: flex;
   justify-content: center;
@@ -366,76 +325,48 @@ a:hover {
 }
 
 
-/* Mobile Version */
+/* Mobile Version  */
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 736px) {
 
   section,
   body {
-    padding-left: 0;
-    padding-right: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
     overflow-x: hidden;
     width: 100%;
-
   }
-  body {
-    text-align: center;
+  body,
+  html {
+    background-color: 333;
   }
   .navbar {
-    
+    margin: 0;
     display: flex;
     justify-content: center;
     padding: 4px 0;
   }
   .navbar a{ 
-    margin: 0 2px;
-    font-size: 14px;
-    /* padding: 3px; */
-  }
-  .hero {
-    height: auto;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    padding-left: 0;
-  }
-  .hero-main {
-    height: 37em;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    /* padding-left: 20px;
-    padding-right: 20px; */
-  }
-  .title {
-    padding-top: 50px;
-    padding-bottom: 45px;
-  }
-  .title h1 {
-    padding: 5px 0;
-    font-size: 32px;
-  }
-  .title h2 {
-    font-size: 28px;
-  }
-  .profile {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 5px;
-    padding-bottom: 20px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  #profile {  
     margin: 0;
-    padding: 0;
-    width: 65%;
-    /* border-radius: 50%;
-    border: 3px solid #d6d6d6; */
+    padding: 0 20px;
+    font-size: 14px;
   }
+
+  .hero-headings h1 {
+    left: 13%;
+    font-size: 30px;
+  }
+  .hero-headings h2 {
+    left: 13%;
+    font-size: 23px;
+  }
+
+  #profile {
+    display: none;
+  }
+
   .about {
-    /* width: 100%; */
     padding: 0;
     margin: 0;
   }
@@ -552,3 +483,128 @@ a:hover {
   }
 
 }
+
+/* Tablets Portrait */
+ @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  section,
+  body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  body,
+  html {
+    background-color: 333;
+  }
+
+  .hero-container {
+    height: 99vh;
+  }
+
+  .hero-headings h1 {
+    display: absolute;
+    top: 30%;
+  }
+  .hero-headings h2 {
+    display: absolute;
+    top: 38%;
+  }
+  .profile {
+    position: absolute;
+    top: 50%;
+    right: 28%;
+  }
+  #profile {
+    width: 350px;
+    
+  }
+
+  .about-text {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .skills {
+    padding: 0 8%;
+  }
+
+  .projects-image {
+    width: 600px;
+  }
+  .projects-rows-dark {
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+  }
+  
+  .projects-rows-light {
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+  }
+  .dark-project-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .light-project-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-description {
+    display: flex;
+    flex-direction: column;
+    width: 33em;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+    font-size: 18px;
+    text-align: left;
+  }
+  .project-links {
+    justify-content: center;
+  }
+  
+} 
+
+   /* Tablets Landscape */
+/* @media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.profile {
+  top: 30%;
+  right: 14%;
+}
+.profile img {
+  max-width: 250px;
+}
+.hero-headings h1 {
+  font-size: 30px;
+  top: 44%;
+}
+.hero-headings h2 {
+  font-size: 28px;
+  top: 49%;
+}
+.hero-container {
+  height: 768px;
+}
+
+
+
+} */
